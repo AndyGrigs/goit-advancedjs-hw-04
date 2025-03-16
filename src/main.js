@@ -1,16 +1,17 @@
-import { loadImages } from './api';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { createPthotsHtml } from './render';
+import { createPthotsHtml } from './js/render-functions';
+import {loadImages} from "./js/pixabay-api"
 
 const refs = {
   form: document.querySelector('#search-form'),
   gallery: document.querySelector('.gallery'),
   loader: document.querySelector('#loader'),
+  loadMoreBtn: document.querySelector('#load-more'),
 };
 
 let lightbox = null;
