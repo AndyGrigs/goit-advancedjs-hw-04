@@ -14,10 +14,15 @@ body {
   line-height: 1.5;
 }
 
-h1 {
+.title {
   text-align: center;
-  margin: 20px auto;
-  font-size: 1.6em;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  font-size: 1em;
+  vertical-align: middle;
 }
 
 .wrapper {
@@ -87,18 +92,20 @@ h1 {
   transform: scale(1.05);
 }
 
-.gallery.info {
+.gallery .info {
+  font-size: .65em; 
   display: flex;
 }
 
-.gallery.info.info-item {
+.gallery .info .info-item {
   flex: 1;
 }
 
-.gallery.info.info-item b {
+.gallery .info .info-item b {
   display: block;
-  margin-bottom: 1px;
 }
+
+
 
 .loader-container {
   position: fixed;
